@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.top-bar a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+}
+
+.search-bar button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.express-delivery button {
+    background-color: #e60023;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.product-listing {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+    background-color: #fff;
+}
+
+.product {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 220px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.product-tag {
+    background-color: #00d3c9;
+    color: #fff;
+    padding: 5px 10px;
+    margin-bottom: 15px;
+    display: inline-block;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.product-category {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.product h3 {
+    font-size: 16px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.product-price {
+    color: #e60023;
+    font-weight: bold;
+}
+
+</style>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="left-links">
+                <a href="#">More Brands</a>
+            </div>
+            <div class="right-links">
+                <a href="#">Stores</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Login</a>
+            </div>
+        </div>
+        <div class="main-header">
+            <div class="logo">
+                <img src="https://www.pikpng.com/pngl/b/126-1261680_we-work-with-amazing-companies-red-reebok.png" alt="Reebok Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">New</a></li>
+                    <li><a href="#">Icons</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Sports</a></li>
+                    <li><a href="#">Classic</a></li>
+                    <li><a href="#">Sale</a></li>
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <input type="text" placeholder="Search Classic">
+                <button>Search</button>
+            </div>
+            <div class="express-delivery">
+                <button>Express Delivery</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="product-listing">
+        <div class="product">
+            <div class="product-tag">I AM THE NEW</div>
+            <img src="https://hips.hearstapps.com/hmg-prod/images/hoka-zinal-13085-1643565794.jpg?crop=1.00xw:0.849xh;0,0.151xh&resize=2048:*" alt="Product 1">
+            <p class="product-category">Training Shoes</p>
+            <h3>Reebok Women NFX Trainer</h3>
+            <p class="product-price">₹7,599</p>
+        </div>
+        <div class="product">
+            <div class="product-tag">I AM THE NEW</div>
+            <img src="https://hips.hearstapps.com/hmg-prod/images/hoka-zinal-13085-1643565794.jpg?crop=1.00xw:0.849xh;0,0.151xh&resize=2048:*" alt="Product 2">
+            <p class="product-category">Classic Shoes</p>
+            <h3>Reebok Women Club C 85 W</h3>
+            <p class="product-price">₹6,999</p>
+        </div>
+        <div class="product">
+            <div class="product-tag">I AM THE NEW</div>
+            <img src="https://hips.hearstapps.com/hmg-prod/images/hoka-zinal-13085-1643565794.jpg?crop=1.00xw:0.849xh;0,0.151xh&resize=2048:*" alt="Product 3">
+            <p class="product-category">Running Shoes</p>
+            <h3>Reebok Women Energen Plus 2</h3>
+            <p class="product-price">₹6,999</p>
+        </div>
+        <div class="product">
+            <div class="product-tag">I AM THE NEW</div>
+            <img src="https://hips.hearstapps.com/hmg-prod/images/hoka-zinal-13085-1643565794.jpg?crop=1.00xw:0.849xh;0,0.151xh&resize=2048:*" alt="Product 4">
+            <p class="product-category">Classic Shoes</p>
+            <h3>Reebok Unisex Classic Leather</h3>
+            <p class="product-price">₹7,909</p>
+        </div>
+    </section>
+
+    
+</body>
+</html>
